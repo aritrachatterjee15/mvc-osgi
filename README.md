@@ -6,7 +6,7 @@ A project demonstrating a web application in an OSGi environment using Gemini Bl
 Running the application:
 
 List of bundles required to run the application:
-Bundle
+
 org.eclipse.osgi_3.9.0.v20130529-1710
 org.eclipse.gemini.web.extender_2.1.0.RELEASE
 org.eclipse.virgo.util.osgi_3.5.0.RELEASE
@@ -51,57 +51,55 @@ org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354
 ch.qos.logback.classic_1.0.7
 org.slf4j.api_1.7.2.v20121108-1250
 org.apache.geronimo.specs.geronimo-annotation_1.1_spec_1.0.1
-45	ACTIVE      com.springsource.net.sf.cglib_2.1.3
-46	ACTIVE      org.springframework.context.support_3.1.4.RELEASE
-47	ACTIVE      javax.xml.rpc_1.1.0.v201209140446
-48	ACTIVE      org.eclipse.text_3.5.300.v20121210-150853
-49	ACTIVE      org.springframework.orm_3.1.4.RELEASE
-50	ACTIVE      org.eclipse.virgo.util.common_3.5.0.RELEASE
-51	ACTIVE      org.springframework.asm_3.1.4.RELEASE
-52	ACTIVE      org.eclipse.equinox.registry_3.5.300.v20130327-1442
-53	ACTIVE      com.mysql.jdbc_5.1.26
-54	ACTIVE      jackson-core-asl_1.9.8
-55	ACTIVE      org.eclipse.core.filesystem_1.4.0.v20130122-153237
-56	RESOLVED    org.eclipse.jdt.compiler.apt_1.0.600.v20130530-1010
-	            Master=14
-58	ACTIVE      org.eclipse.core.contenttype_3.4.200.v20130326-1255
-59	ACTIVE      org.springframework.aop_3.1.4.RELEASE
-60	ACTIVE      org.eclipse.virgo.util.parser.manifest_3.5.0.RELEASE
-61	ACTIVE      org.eclipse.gemini.jpa_1.1.0.RELEASE
-62	ACTIVE      javax.el_2.2.0.v201303151357
-63	ACTIVE      javax.inject_1.0.0.v20091030
-64	ACTIVE      org.springframework.context_3.1.4.RELEASE
-65	ACTIVE      org.eclipse.equinox.app_1.3.100.v20130327-1442
-66	ACTIVE      javax.persistence_2.0.5.v201212031355
-67	ACTIVE      org.eclipse.gemini.web.core_2.1.0.RELEASE
-68	ACTIVE      slf4j.api_1.6.6
-70	ACTIVE      org.springframework.data.core_1.3.1.RELEASE
-71	ACTIVE      javax.servlet.jsp_2.2.0.v201112011158
-72	ACTIVE      org.eclipse.gemini.blueprint.io_1.0.0.RELEASE
-73	ACTIVE      org.eclipse.gemini.web.tomcat_2.1.0.RELEASE
-74	ACTIVE      org.springframework.web_3.1.4.RELEASE
-75	ACTIVE      org.eclipse.equinox.preferences_3.5.100.v20130422-1538
-76	ACTIVE      org.springframework.beans_3.1.4.RELEASE
-77	ACTIVE      javax.xml_1.3.4.v201005080400
-78	ACTIVE      org.eclipse.virgo.util.osgi.manifest_3.5.0.RELEASE
-79	ACTIVE      org.eclipse.persistence.asm_3.3.1.v201302191223
-80	ACTIVE      javax.annotation_1.1.0.v201209060031
-81	ACTIVE      org.springframework.oxm_3.1.4.RELEASE
-83	ACTIVE      org.springframework.expression_3.1.4.RELEASE
-84	ACTIVE      org.apache.el_7.0.26.v201205020640
-85	RESOLVED    org.apache.catalina.ha_7.0.26.v201205030525
-	            Master=24
-86	ACTIVE      com.ibm.icu_50.1.0.v20121116-2
-87	ACTIVE      org.springframework.web.servlet_3.1.4.RELEASE
-88	ACTIVE      org.eclipse.equinox.common_3.6.200.v20130402-1505
-89	ACTIVE      com.springsource.javax.ejb_3.0.0
-90	ACTIVE      org.apache.juli.extras_7.0.26.v201205020640
-91	ACTIVE      org.eclipse.persistence.jpa_2.4.2.v20130514-5956486
-92	ACTIVE      org.eclipse.osgi.services_3.3.100.v20130513-1956
-93	ACTIVE      org.eclipse.gemini.blueprint.core_1.0.0.RELEASE
-94	ACTIVE      org.apache.commons.logging_1.1.1.v201101211721
-95	ACTIVE      org.eclipse.core.resources_3.8.100.v20121218-144628
-96	ACTIVE      org.eclipse.persistence.antlr_3.2.0.v201302191141
+com.springsource.net.sf.cglib_2.1.3
+org.springframework.context.support_3.1.4.RELEASE
+javax.xml.rpc_1.1.0.v201209140446
+org.eclipse.text_3.5.300.v20121210-150853
+org.springframework.orm_3.1.4.RELEASE
+org.eclipse.virgo.util.common_3.5.0.RELEASE
+org.springframework.asm_3.1.4.RELEASE
+org.eclipse.equinox.registry_3.5.300.v20130327-1442
+com.mysql.jdbc_5.1.26
+jackson-core-asl_1.9.8
+org.eclipse.core.filesystem_1.4.0.v20130122-153237
+org.eclipse.jdt.compiler.apt_1.0.600.v20130530-1010
+org.eclipse.core.contenttype_3.4.200.v20130326-1255
+org.springframework.aop_3.1.4.RELEASE
+org.eclipse.virgo.util.parser.manifest_3.5.0.RELEASE
+org.eclipse.gemini.jpa_1.1.0.RELEASE
+javax.el_2.2.0.v201303151357
+javax.inject_1.0.0.v20091030
+org.springframework.context_3.1.4.RELEASE
+org.eclipse.equinox.app_1.3.100.v20130327-1442
+javax.persistence_2.0.5.v201212031355
+org.eclipse.gemini.web.core_2.1.0.RELEASE
+slf4j.api_1.6.6
+org.springframework.data.core_1.3.1.RELEASE
+javax.servlet.jsp_2.2.0.v201112011158
+org.eclipse.gemini.blueprint.io_1.0.0.RELEASE
+org.eclipse.gemini.web.tomcat_2.1.0.RELEASE
+org.springframework.web_3.1.4.RELEASE
+org.eclipse.equinox.preferences_3.5.100.v20130422-1538
+org.springframework.beans_3.1.4.RELEASE
+javax.xml_1.3.4.v201005080400
+org.eclipse.virgo.util.osgi.manifest_3.5.0.RELEASE
+org.eclipse.persistence.asm_3.3.1.v201302191223
+javax.annotation_1.1.0.v201209060031
+org.springframework.oxm_3.1.4.RELEASE
+org.springframework.expression_3.1.4.RELEASE
+org.apache.el_7.0.26.v201205020640
+org.apache.catalina.ha_7.0.26.v201205030525
+com.ibm.icu_50.1.0.v20121116-2
+org.springframework.web.servlet_3.1.4.RELEASE
+org.eclipse.equinox.common_3.6.200.v20130402-1505
+com.springsource.javax.ejb_3.0.0
+org.apache.juli.extras_7.0.26.v201205020640
+org.eclipse.persistence.jpa_2.4.2.v20130514-5956486
+org.eclipse.osgi.services_3.3.100.v20130513-1956
+org.eclipse.gemini.blueprint.core_1.0.0.RELEASE
+org.apache.commons.logging_1.1.1.v201101211721
+org.eclipse.core.resources_3.8.100.v20121218-144628
+org.eclipse.persistence.antlr_3.2.0.v201302191141
 
 Start Level for core bundles:
 org.eclipse.osgi - -1 (Framework Bundle)
@@ -115,4 +113,5 @@ Default (all other bundles) - 4
 
 There seems to be currently a bug in Spring Web Servlet that causes issues with OSGi deployment. A bug has been raised for it: https://jira.springsource.org/browse/SPR-10879#comment-93203
 Follow the solution mentioned in the bug description, as a workaround.
+
 
