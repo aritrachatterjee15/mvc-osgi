@@ -9,9 +9,8 @@ Bundle-SymbolicName: jpa.client
 Bundle-DocURL: http://www.dummy.com/
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: com.test.web.jpa.model;version="0.0.1",
- javax.persistence;version="[2.0.0,2.1.0)",
+ javax.persistence;version="2.0.5",
  org.aopalliance.aop;version="1.0.0",
- org.eclipse.osgi.framework.console;version="1.1.0",
  org.osgi.framework;version="[1.6.0,2.0.0)",
  org.springframework.aop;version="[3.1.0,4.0.0)",
  org.springframework.aop.framework;version="[3.1.0,4.0.0)",
