@@ -33,12 +33,6 @@ public class BookInventoryImpl implements BookInventory {
 		return books;
 	}
 
-	@Override
-	public void addAuthor(String firstName, String lastName) {
-		Author author = new Author(firstName, lastName);
-		entityManager.persist(author);
-	}
-
 	private Author getAuthor(String lastName) {
 		Query query = entityManager.createNamedQuery(Author.GET_AUTHOR_BY_NAME);
 		query.setParameter("authorName", lastName);

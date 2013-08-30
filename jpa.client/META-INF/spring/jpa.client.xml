@@ -21,6 +21,11 @@
 
 	<bean id="bookInventoryImpl" class="com.test.web.jpa.client.BookInventoryImpl" />
 
+	<osgi:service id="authorOperations"
+		interface="com.test.web.jpa.client.AuthorOperations" ref="authorOperationsImpl" />
+
+	<bean id="authorOperationsImpl" class="com.test.web.jpa.client.AuthorOperationsImpl" />
+
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
