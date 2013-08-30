@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-Name: Test JPA Client
+Created-By: Aritra Test Web
+Bundle-Version: 0.0.1.qualifier
+Bnd-LastModified: 1345665282491
+Bundle-ManifestVersion: 2
+Bundle-Description: Test JPA Client
+Bundle-SymbolicName: jpa.client
+Bundle-DocURL: http://www.dummy.com/
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.test.web.jpa.model;version="0.0.1",
+ javax.persistence;version="[2.0.0,2.1.0)",
+ org.aopalliance.aop;version="1.0.0",
+ org.eclipse.osgi.framework.console;version="1.1.0",
+ org.osgi.framework;version="[1.6.0,2.0.0)",
+ org.springframework.aop;version="[3.1.0,4.0.0)",
+ org.springframework.aop.framework;version="[3.1.0,4.0.0)",
+ org.springframework.dao.annotation;version="[3.1.0,4.0.0)",
+ org.springframework.orm.jpa;version="[3.1.0,4.0.0)",
+ org.springframework.orm.jpa.support;version="[3.1.0,4.0.0)",
+ org.springframework.orm.jpa.vendor;version="[3.1.0,4.0.0)",
+ org.springframework.transaction;version="[3.1.0,4.0.0)",
+ org.springframework.transaction.annotation;version="[3.1.0,4.0.0)"
+Export-Package: com.test.web.jpa.client;version="0.0.1"
