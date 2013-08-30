@@ -121,15 +121,15 @@ com.mysql.jdbc_5.1.26<br>
 
 Start Level for core bundles:
 ------------------------------
-org.eclipse.osgi - -1 (Framework Bundle)<br>
-mysql-jdbc - 2<br>
-javax-persistence - 2<br>
-osgi.enterprise - 2<br>
-org.eclipse.equinox.common - 2<br>
-org.eclipse.gemini.blueprint.extender - 3<br>
-org.eclipse.gemini.jpa - 3<br>
-Default (all other bundles) - 4<br>
-<br>
+* org.eclipse.osgi: -1 (Framework Bundle)
+* mysql-jdbc: 2
+* javax-persistence: 2
+* osgi.enterprise - 2
+* org.eclipse.equinox.common: 2
+* org.eclipse.gemini.blueprint.extender: 3
+* org.eclipse.gemini.jpa: 3
+* Default (all other bundles): 4
+
 There seems to be currently a bug in Spring Web Servlet that causes issues with OSGi deployment. A bug has been raised for it: https://jira.springsource.org/browse/SPR-10879#comment-93203
 Follow the solution mentioned in the bug description, as a workaround.
 
