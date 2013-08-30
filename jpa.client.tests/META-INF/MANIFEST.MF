@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-Name: JPA Test
+Bundle-Version: 0.0.1.qualifier
+Bundle-ManifestVersion: 2
+Bundle-Description: JPA Test
+Bundle-SymbolicName: jpa.client.tests
+Bundle-DocURL: http://www.dummy.com/
+Require-Bundle: org.junit4;bundle-version="4.8.1",
+ jpa;bundle-version="0.0.1",
+ jpa.client;bundle-version="0.0.1",
+ org.apache.geronimo.specs.geronimo-jpa_2.0_spec;bundle-version="[1.1.0,2.0.0)",
+ org.eclipse.gemini.jpa;bundle-version="1.1.0",
+ org.eclipse.persistence.jpa;bundle-version="[2.4.0,2.5.0)",
+ org.eclipse.persistence.jpa.jpql;bundle-version="[2.0.0,2.1.0)",
+ org.springframework.transaction;bundle-version="[3.1.0,4.0.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="[1.6.0,2.0.0)"
+Bundle-Activator: com.test.web.jpa.client.tests.Activator
