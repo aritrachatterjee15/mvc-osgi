@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-Name: Test Web JPA
+Created-By: Aritra Test Web
+Bundle-Version: 0.0.1.qualifier
+Bnd-LastModified: 1345665282491
+Bundle-ManifestVersion: 2
+Bundle-Description: Test Web JPA
+Bundle-SymbolicName: jpa
+Bundle-DocURL: http://www.dummy.com/
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.mysql.jdbc;version="5.1.26",
+ javax.persistence;jpa="2.0";version="[2.0.0,2.1.0)",
+ org.eclipse.persistence.indirection;version="[2.3.2,3.0.0)",
+ org.eclipse.persistence.internal.jpa.rs.metadata.model;version="[2.4.0,3.0.0)",
+ org.eclipse.persistence.jpa;version="[2.4.0,3.0.0)"
+Export-Package: com.test.web.jpa.model;version="4.0.0"
+JPA-PersistenceUnits: jpa.books
+Meta-Persistence: META-INF/persistence.xml
