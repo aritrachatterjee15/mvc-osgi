@@ -10,7 +10,7 @@ import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import com.test.web.jpa.client.BookInventory;
+import com.test.web.jpa.client.AuthorOperations;
 
 /**
  * @author AritraChatterjee
@@ -31,14 +31,14 @@ public class SpringConfig extends WebMvcConfigurerAdapter implements
 	}
 
 	@Bean
-	public BookInventory bookInventory() throws InterruptedException {
+	public AuthorOperations authorOperations() throws InterruptedException {
 		BundleContext bundleContext = (BundleContext) servletContext
 				.getAttribute("osgi-bundlecontext");
 		if (bundleContext == null) {
 			throw new IllegalStateException("osgi-bundlecontext not registered");
 		}
 		return bundleContext.getService(bundleContext
-				.getServiceReference(BookInventory.class));
+				.getServiceReference(AuthorOperations.class));
 	}
 
 }

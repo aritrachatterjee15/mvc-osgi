@@ -16,7 +16,6 @@ import com.test.web.jpa.model.Book;
  * 
  */
 @Controller
-@RequestMapping(value = "/book")
 public class BookController {
 
 	@Autowired

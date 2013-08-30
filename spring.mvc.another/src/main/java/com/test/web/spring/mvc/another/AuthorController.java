@@ -8,23 +8,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.test.web.jpa.client.BookInventory;
-import com.test.web.jpa.model.Book;
+import com.test.web.jpa.client.AuthorOperations;
+import com.test.web.jpa.model.Author;
 
 /**
  * @author AritraChatterjee
  * 
  */
 @Controller
-@RequestMapping(value = "/test")
-public class BookController {
+public class AuthorController {
 
 	@Autowired
-	private BookInventory bookInventory;
+	private AuthorOperations authorOperations;
 
 	@RequestMapping(value = "list", method = RequestMethod.GET)
 	@ResponseBody
-	public List<Book> viewBooks() {
-		return bookInventory.viewBooks();
+	public List<Author> viewAuthors() {
+		return authorOperations.viewAuthors();
 	}
 }

@@ -34,5 +34,5 @@ Import-Package: com.test.web.jpa.client;version="0.0.1",
  org.springframework.web.context.support;version="[3.1.0,4.0.0)",
  org.springframework.web.servlet;version="[3.1.0,4.0.0)",
  org.springframework.web.servlet.config.annotation;version="[3.1.0,4.0.0)"
-Web-ContextPath: /mvc1
+Web-ContextPath: /book
 Bundle-Classpath: .
