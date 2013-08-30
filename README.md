@@ -6,36 +6,34 @@ A project demonstrating a web application in an OSGi environment using Gemini Bl
 Running the application:
 ==========================
 
-Required bundles:
-
 Core OSGi and Eclipse Bundles:
 -------------------------------
-org.eclipse.osgi_3.9.0.v20130529-1710<br>
-osgi.enterprise_4.2.0.v201108120515<br>
-org.eclipse.core.expressions_3.4.500.v20130515-1343<br>
-org.eclipse.core.runtime_3.9.0.v20130326-1255<br>
-org.eclipse.equinox.http.registry_1.1.300.v20130402-1529<br>
-org.eclipse.equinox.cm_1.0.400.v20130327-1442<br>
-org.eclipse.jdt.core_3.9.0.xx-20130228-1500-e43<br>
-org.eclipse.core.commands_3.6.100.v20130124-145547<br>
-org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354<br>
-org.eclipse.core.filesystem_1.4.0.v20130122-153237<br>
-org.eclipse.jdt.compiler.apt_1.0.600.v20130530-1010<br>
-org.eclipse.equinox.app_1.3.100.v20130327-1442<br>
-org.eclipse.core.contenttype_3.4.200.v20130326-1255<br>
-org.eclipse.equinox.common_3.6.200.v20130402-1505<br>
-org.eclipse.core.resources_3.8.100.v20121218-144628<br>
-org.eclipse.equinox.console_1.0.100.v20130429-0953<br>
-org.apache.felix.gogo.command_0.10.0.v201209301215<br>
-org.eclipse.core.jobs_3.5.300.v20130429-1813<br>
-org.eclipse.equinox.preferences_3.5.100.v20130422-1538<br>
-org.apache.felix.gogo.runtime_0.10.0.v201209301036<br>
-org.apache.felix.gogo.shell_0.10.0.v201212101605<br>
-org.eclipse.equinox.registry_3.5.300.v20130327-1442<br>
-org.eclipse.osgi.services_3.3.100.v20130513-1956<br>
-org.eclipse.text_3.5.300.v20121210-150853<br>
-com.ibm.icu_50.1.0.v20121116-2<br>
-javax.xml_1.3.4.v201005080400<br>
+* org.eclipse.osgi_3.9.0.v20130529-1710
+* osgi.enterprise_4.2.0.v201108120515
+* org.eclipse.core.expressions_3.4.500.v20130515-1343
+* org.eclipse.core.runtime_3.9.0.v20130326-1255
+* org.eclipse.equinox.http.registry_1.1.300.v20130402-1529
+* org.eclipse.equinox.cm_1.0.400.v20130327-1442
+* org.eclipse.jdt.core_3.9.0.xx-20130228-1500-e43
+* org.eclipse.core.commands_3.6.100.v20130124-145547
+* org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354
+* org.eclipse.core.filesystem_1.4.0.v20130122-153237
+* org.eclipse.jdt.compiler.apt_1.0.600.v20130530-1010
+* org.eclipse.equinox.app_1.3.100.v20130327-1442
+* org.eclipse.core.contenttype_3.4.200.v20130326-1255
+* org.eclipse.equinox.common_3.6.200.v20130402-1505
+* org.eclipse.core.resources_3.8.100.v20121218-144628
+* org.eclipse.equinox.console_1.0.100.v20130429-0953
+* org.apache.felix.gogo.command_0.10.0.v201209301215
+* org.eclipse.core.jobs_3.5.300.v20130429-1813
+* org.eclipse.equinox.preferences_3.5.100.v20130422-1538
+* org.apache.felix.gogo.runtime_0.10.0.v201209301036
+* org.apache.felix.gogo.shell_0.10.0.v201212101605
+* org.eclipse.equinox.registry_3.5.300.v20130327-1442
+* org.eclipse.osgi.services_3.3.100.v20130513-1956
+* org.eclipse.text_3.5.300.v20121210-150853
+* com.ibm.icu_50.1.0.v20121116-2
+* javax.xml_1.3.4.v201005080400
 
 EclipseLink:
 --------------
