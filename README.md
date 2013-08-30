@@ -130,7 +130,13 @@ Start Level for core bundles:
 * org.eclipse.gemini.jpa: 3
 * Default (all other bundles): 4
 
-There seems to be currently a bug in Spring Web Servlet that causes issues with OSGi deployment. A bug has been raised for it: https://jira.springsource.org/browse/SPR-10879#comment-93203
+There seems to be currently a bug in Spring Web Servlet that causes issues with OSGi deployment. A bug has been raised for it: https://jira.springsource.org/browse/SPR-10879#comment-93203.<br>
 Follow the solution mentioned in the bug description, as a workaround.
+
+TODO
+-----
+* Hateoas Integration
+* Create Integration Tests
+* Build Automation and Deployment
 
 
