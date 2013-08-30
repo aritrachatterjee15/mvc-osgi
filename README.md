@@ -6,57 +6,51 @@ A project demonstrating a web application in an OSGi environment using Gemini Bl
 Running the application:
 
 List of bundles required to run the application:
-id	State       Bundle
-0	ACTIVE      org.eclipse.osgi_3.9.0.v20130529-1710
-1	ACTIVE      org.eclipse.gemini.web.extender_2.1.0.RELEASE
-2	ACTIVE      org.eclipse.virgo.util.osgi_3.5.0.RELEASE
-3	ACTIVE      org.eclipse.core.expressions_3.4.500.v20130515-1343
-4	ACTIVE      ch.qos.logback.core_1.0.7
-5	RESOLVED    org.apache.jasper_7.0.26.v201205030742
-	            Master=24
-6	ACTIVE      jackson-mapper-asl_1.9.8
-7	ACTIVE      org.eclipse.persistence.core_2.4.2.v20130514-5956486
-8	RESOLVED    org.apache.coyote_7.0.26.v201205030742
-	            Master=24
-9	ACTIVE      com.springsource.freemarker_2.3.15
-11	ACTIVE      osgi.enterprise_4.2.0.v201108120515
-12	ACTIVE      org.apache.tomcat.api_7.0.26.v201205020640
-13	ACTIVE      org.springframework.core_3.1.4.RELEASE
-14	ACTIVE      org.eclipse.jdt.core_3.9.0.xx-20130228-1500-e43
-	            Fragments=56
-15	ACTIVE      org.springframework.transaction_3.1.4.RELEASE
-16	ACTIVE      org.apache.felix.gogo.runtime_0.10.0.v201209301036
-17	ACTIVE      javax.xml.stream_1.0.1.v201004272200
-18	ACTIVE      org.eclipse.persistence.jpa.jpql_2.0.1.v20130514-5956486
-19	ACTIVE      org.eclipse.core.runtime_3.9.0.v20130326-1255
-20	ACTIVE      javax.servlet_3.0.0.v201112011016
-21	ACTIVE      org.eclipse.core.commands_3.6.100.v20130124-145547
-22	ACTIVE      org.apache.geronimo.specs.geronimo-jpa_2.0_spec_1.1.0
-23	ACTIVE      org.eclipse.equinox.console_1.0.100.v20130429-0953
-24	ACTIVE      org.apache.catalina_7.0.26.v201205021508
-	            Fragments=5, 8, 36, 40, 85
-25	ACTIVE      org.eclipse.virgo.util.io_3.5.0.RELEASE
-26	ACTIVE      com.springsource.org.aopalliance_1.0.0
-27	ACTIVE      org.eclipse.gemini.blueprint.extender_1.0.0.RELEASE
-28	ACTIVE      org.eclipse.virgo.util.math_3.5.0.RELEASE
-29	ACTIVE      com.springsource.javax.mail_1.4.1
-30	ACTIVE      javax.xml.soap_1.2.0.v201005080501
-31	ACTIVE      org.eclipse.equinox.http.registry_1.1.300.v20130402-1529
-32	ACTIVE      org.springframework.jdbc_3.1.4.RELEASE
-33	ACTIVE      org.apache.felix.gogo.command_0.10.0.v201209301215
-34	ACTIVE      org.aopalliance_1.0.0.v201105210816
-35	ACTIVE      org.eclipse.equinox.cm_1.0.400.v20130327-1442
-36	RESOLVED    org.apache.tomcat.util_7.0.26.v201205030742
-	            Master=24
-37	ACTIVE      org.eclipse.core.jobs_3.5.300.v20130429-1813
-38	ACTIVE      org.apache.geronimo.specs.geronimo-j2ee-management_1.1_spec_1.0.1
-39	ACTIVE      org.apache.felix.gogo.shell_0.10.0.v201212101605
-40	RESOLVED    org.apache.catalina.tribes_7.0.26.v201205030742
-	            Master=24
-41	ACTIVE      org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354
-42	ACTIVE      ch.qos.logback.classic_1.0.7
-43	ACTIVE      org.slf4j.api_1.7.2.v20121108-1250
-44	ACTIVE      org.apache.geronimo.specs.geronimo-annotation_1.1_spec_1.0.1
+Bundle
+org.eclipse.osgi_3.9.0.v20130529-1710
+org.eclipse.gemini.web.extender_2.1.0.RELEASE
+org.eclipse.virgo.util.osgi_3.5.0.RELEASE
+org.eclipse.core.expressions_3.4.500.v20130515-1343
+ch.qos.logback.core_1.0.7
+org.apache.jasper_7.0.26.v201205030742
+jackson-mapper-asl_1.9.8
+org.eclipse.persistence.core_2.4.2.v20130514-5956486
+org.apache.coyote_7.0.26.v201205030742
+com.springsource.freemarker_2.3.15
+osgi.enterprise_4.2.0.v201108120515
+org.apache.tomcat.api_7.0.26.v201205020640
+org.springframework.core_3.1.4.RELEASE
+org.eclipse.jdt.core_3.9.0.xx-20130228-1500-e43
+org.springframework.transaction_3.1.4.RELEASE
+org.apache.felix.gogo.runtime_0.10.0.v201209301036
+javax.xml.stream_1.0.1.v201004272200
+org.eclipse.persistence.jpa.jpql_2.0.1.v20130514-5956486
+org.eclipse.core.runtime_3.9.0.v20130326-1255
+javax.servlet_3.0.0.v201112011016
+org.eclipse.core.commands_3.6.100.v20130124-145547
+org.apache.geronimo.specs.geronimo-jpa_2.0_spec_1.1.0
+org.eclipse.equinox.console_1.0.100.v20130429-0953
+org.apache.catalina_7.0.26.v201205021508
+org.eclipse.virgo.util.io_3.5.0.RELEASE
+com.springsource.org.aopalliance_1.0.0
+org.eclipse.gemini.blueprint.extender_1.0.0.RELEASE
+org.eclipse.virgo.util.math_3.5.0.RELEASE
+com.springsource.javax.mail_1.4.1
+javax.xml.soap_1.2.0.v201005080501
+org.eclipse.equinox.http.registry_1.1.300.v20130402-1529
+org.springframework.jdbc_3.1.4.RELEASE
+org.apache.felix.gogo.command_0.10.0.v201209301215
+org.aopalliance_1.0.0.v201105210816
+org.eclipse.equinox.cm_1.0.400.v20130327-1442
+org.apache.tomcat.util_7.0.26.v201205030742
+org.eclipse.core.jobs_3.5.300.v20130429-1813
+org.apache.geronimo.specs.geronimo-j2ee-management_1.1_spec_1.0.1
+org.apache.felix.gogo.shell_0.10.0.v201212101605
+org.apache.catalina.tribes_7.0.26.v201205030742
+org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354
+ch.qos.logback.classic_1.0.7
+org.slf4j.api_1.7.2.v20121108-1250
+org.apache.geronimo.specs.geronimo-annotation_1.1_spec_1.0.1
 45	ACTIVE      com.springsource.net.sf.cglib_2.1.3
 46	ACTIVE      org.springframework.context.support_3.1.4.RELEASE
 47	ACTIVE      javax.xml.rpc_1.1.0.v201209140446
