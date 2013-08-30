@@ -37,87 +37,87 @@ Core OSGi and Eclipse Bundles:
 
 EclipseLink:
 --------------
-org.eclipse.persistence.core_2.4.2.v20130514-5956486<br>
-org.eclipse.persistence.jpa.jpql_2.0.1.v20130514-5956486<br>
-org.eclipse.persistence.antlr_3.2.0.v201302191141<br>
-org.eclipse.persistence.jpa_2.4.2.v20130514-5956486<br>
-org.eclipse.persistence.asm_3.3.1.v201302191223<br>
+* org.eclipse.persistence.core_2.4.2.v20130514-5956486
+* org.eclipse.persistence.jpa.jpql_2.0.1.v20130514-5956486
+* org.eclipse.persistence.antlr_3.2.0.v201302191141
+* org.eclipse.persistence.jpa_2.4.2.v20130514-5956486
+* org.eclipse.persistence.asm_3.3.1.v201302191223
 
 Gemini Blueprint:
 ------------------
-org.eclipse.gemini.blueprint.extender_1.0.0.RELEASE<br>
-org.eclipse.gemini.blueprint.io_1.0.0.RELEASE<br>
-org.eclipse.gemini.blueprint.core_1.0.0.RELEASE<br>
+* org.eclipse.gemini.blueprint.extender_1.0.0.RELEASE
+* org.eclipse.gemini.blueprint.io_1.0.0.RELEASE
+* org.eclipse.gemini.blueprint.core_1.0.0.RELEASE
 
 Gemini JPA:
 ------------
-org.eclipse.gemini.jpa_1.1.0.RELEASE<br>
-javax.persistence_2.0.5.v201212031355<br>
+* org.eclipse.gemini.jpa_1.1.0.RELEASE
+* javax.persistence_2.0.5.v201212031355
 
 Tomcat and it's dependencies:
 ------------------------------
-org.apache.coyote_7.0.26.v201205030742<br>
-org.apache.tomcat.api_7.0.26.v201205020640<br>
-org.apache.catalina.tribes_7.0.26.v201205030742<br>
-org.apache.catalina_7.0.26.v201205021508<br>
-org.apache.catalina.ha_7.0.26.v201205030525<br>
-org.apache.tomcat.util_7.0.26.v201205030742<br>
-org.eclipse.virgo.util.osgi_3.5.0.RELEASE<br>
-org.apache.jasper_7.0.26.v201205030742<br>
-org.eclipse.virgo.util.io_3.5.0.RELEASE<br>
-javax.servlet_3.0.0.v201112011016<br>
-org.eclipse.virgo.util.math_3.5.0.RELEASE<br>
-javax.xml.soap_1.2.0.v201005080501<br>
-javax.xml.rpc_1.1.0.v201209140446<br>
-org.eclipse.virgo.util.common_3.5.0.RELEASE<br>
-org.eclipse.virgo.util.osgi.manifest_3.5.0.RELEASE<br>
-org.eclipse.virgo.util.parser.manifest_3.5.0.RELEASE<br>
-com.springsource.javax.ejb_3.0.0<br>
-com.springsource.javax.mail_1.4.1<br>
-org.apache.juli.extras_7.0.26.v201205020640<br>
-slf4j.api_1.6.6<br>
-javax.annotation_1.1.0.v201209060031<br>
-javax.el_2.2.0.v201303151357<br>
-org.apache.el_7.0.26.v201205020640<br>
-javax.servlet.jsp_2.2.0.v201112011158<br>
+* org.apache.coyote_7.0.26.v201205030742
+* org.apache.tomcat.api_7.0.26.v201205020640
+* org.apache.catalina.tribes_7.0.26.v201205030742
+* org.apache.catalina_7.0.26.v201205021508
+* org.apache.catalina.ha_7.0.26.v201205030525
+* org.apache.tomcat.util_7.0.26.v201205030742
+* org.eclipse.virgo.util.osgi_3.5.0.RELEASE
+* org.apache.jasper_7.0.26.v201205030742
+* org.eclipse.virgo.util.io_3.5.0.RELEASE
+* javax.servlet_3.0.0.v201112011016
+* org.eclipse.virgo.util.math_3.5.0.RELEASE
+* javax.xml.soap_1.2.0.v201005080501
+* javax.xml.rpc_1.1.0.v201209140446
+* org.eclipse.virgo.util.common_3.5.0.RELEASE
+* org.eclipse.virgo.util.osgi.manifest_3.5.0.RELEASE
+* org.eclipse.virgo.util.parser.manifest_3.5.0.RELEASE
+* com.springsource.javax.ejb_3.0.0
+* com.springsource.javax.mail_1.4.1
+* org.apache.juli.extras_7.0.26.v201205020640
+* slf4j.api_1.6.6
+* javax.annotation_1.1.0.v201209060031
+* javax.el_2.2.0.v201303151357
+* org.apache.el_7.0.26.v201205020640
+* javax.servlet.jsp_2.2.0.v201112011158
 
 Gemini Web:
 ------------
-org.eclipse.gemini.web.extender_2.1.0.RELEASE<br>
-org.eclipse.gemini.web.core_2.1.0.RELEASE<br>
-org.eclipse.gemini.web.tomcat_2.1.0.RELEASE<br>
-jackson-mapper-asl_1.9.8<br>
-jackson-core-asl_1.9.8<br>
+* org.eclipse.gemini.web.extender_2.1.0.RELEASE
+* org.eclipse.gemini.web.core_2.1.0.RELEASE
+* org.eclipse.gemini.web.tomcat_2.1.0.RELEASE
+* jackson-mapper-asl_1.9.8
+* jackson-core-asl_1.9.8
 
 Springframework:
 -----------------
-org.springframework.core_3.1.4.RELEASE<br>
-com.springsource.net.sf.cglib_2.1.3<br>
-org.springframework.context.support_3.1.4.RELEASE<br>
-org.springframework.orm_3.1.4.RELEASE<br>
-com.springsource.org.aopalliance_1.0.0<br>
-org.springframework.transaction_3.1.4.RELEASE<br>
-org.springframework.aop_3.1.4.RELEASE<br>
-org.springframework.jdbc_3.1.4.RELEASE<br>
-org.springframework.beans_3.1.4.RELEASE<br>
-org.springframework.oxm_3.1.4.RELEASE<br>
-org.springframework.expression_3.1.4.RELEASE<br>
-org.springframework.web.servlet_3.1.4.RELEASE<br>
-org.springframework.context_3.1.4.RELEASE<br>
-org.springframework.web_3.1.4.RELEASE<br>
-org.springframework.asm_3.1.4.RELEASE<br>
-org.aopalliance_1.0.0.v201105210816<br>
-org.apache.commons.logging_1.1.1.v201101211721<br>
+* org.springframework.core_3.1.4.RELEASE
+* com.springsource.net.sf.cglib_2.1.3
+* org.springframework.context.support_3.1.4.RELEASE
+* org.springframework.orm_3.1.4.RELEASE
+* com.springsource.org.aopalliance_1.0.0
+* org.springframework.transaction_3.1.4.RELEASE
+* org.springframework.aop_3.1.4.RELEASE
+* org.springframework.jdbc_3.1.4.RELEASE
+* org.springframework.beans_3.1.4.RELEASE
+* org.springframework.oxm_3.1.4.RELEASE
+* org.springframework.expression_3.1.4.RELEASE
+* org.springframework.web.servlet_3.1.4.RELEASE
+* org.springframework.context_3.1.4.RELEASE
+* org.springframework.web_3.1.4.RELEASE
+* org.springframework.asm_3.1.4.RELEASE
+* org.aopalliance_1.0.0.v201105210816
+* org.apache.commons.logging_1.1.1.v201101211721
 
 Logback:
 ---------
-org.slf4j.api_1.7.2.v20121108-1250<br>
-ch.qos.logback.core_1.0.7<br>
-ch.qos.logback.classic_1.0.7<br>
+* org.slf4j.api_1.7.2.v20121108-1250
+* ch.qos.logback.core_1.0.7
+* ch.qos.logback.classic_1.0.7
 
 MySql Driver:
 --------------
-com.mysql.jdbc_5.1.26<br>
+* com.mysql.jdbc_5.1.26
 
 Start Level for core bundles:
 ------------------------------
