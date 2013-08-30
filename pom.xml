@@ -31,26 +31,19 @@
 	<properties>
 		<org.osgi.service.http.port>8080</org.osgi.service.http.port>
 		<org.osgi.service.http.port.secure>8443</org.osgi.service.http.port.secure>
-		<activemq.version>5.7.0</activemq.version>
-		<servicemix.aspectj.version>1.6.12_1</servicemix.aspectj.version>
-		<camel.version>2.10.1</camel.version>
 		<commons.lang.version>2.6</commons.lang.version>
 		<commons.logging.version>1.1.1</commons.logging.version>
 		<commons.pool.version>1.6</commons.pool.version>
-		<casemanager.commons.pool.version>1.3.0</casemanager.commons.pool.version>
-		<commons.dbcp.version>1.2.2.osgi</commons.dbcp.version>
 		<freemarker.version>2.3.18</freemarker.version>
 		<gemini.blueprint.version>1.0.0.RELEASE</gemini.blueprint.version>
 		<groovy.version>2.0.4</groovy.version>
 		<jetty.version>6.1.26</jetty.version>
-		<joda.version>2.1</joda.version>
 		<logback.version>1.0.7</logback.version>
 		<pax.web.version>3.0.0.M3</pax.web.version>
 		<maven.cal10n>0.7.4</maven.cal10n>
 		<mongo.version>2.9.1</mongo.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<slf4j.version>1.7.2</slf4j.version>
-		<smooks.version>1.5.1</smooks.version>
 		<spring.aopalliance>1.0.0</spring.aopalliance>
 		<spring.cglib.version>2.2.0</spring.cglib.version>
 		<spring.javax.annotation.version>1.0.0</spring.javax.annotation.version>
@@ -63,7 +56,6 @@
 		<jackson.version>1.9.8</jackson.version>
 		<tycho.version>0.15.0</tycho.version>
 		<mockito.version>1.9.5</mockito.version>
-		<restlet.version>2.1.0</restlet.version>
 		<servicemix.jaxen.version>1.1.1_2</servicemix.jaxen.version>
 		<eclipse.equinox.launcher.version>1.0.0</eclipse.equinox.launcher.version>
 		<eclipse.core.runtime.version>3.8.0.v20120521-2346</eclipse.core.runtime.version>
@@ -71,13 +63,6 @@
 		<junit4.version>4.8.1</junit4.version>
 		<junit.version>4.10.0</junit.version>
 		<hamcrest.version>1.1.0</hamcrest.version>
-		<karaf.version>3.0.0.RC1</karaf.version>
-		<aries.blueprint.version>1.1.0</aries.blueprint.version>
-		<sonar.language>java</sonar.language>
-		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-		<sonar.jacoco.reportPath>${project.basedir}/../../target/jacoco.exec</sonar.jacoco.reportPath>
-		<sonar.exclusions>**/*Test*.java,**/*Exception.java,**/*Mock*.java,**/*Literals.java,**/*Fields*.java,**/*Activator*.java</sonar.exclusions>
 	</properties>
 
 	<packaging>pom</packaging>
@@ -186,10 +171,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.2</version>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -218,44 +199,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.maven.artifact.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-core</artifactId>
-			<version>${activemq.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>spring-context</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>commons-logging</artifactId>
-					<groupId>commons-logging</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>activeio-core</artifactId>
-					<groupId>org.apache.activemq</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-pool</artifactId>
-			<version>${activemq.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>activemq-core</artifactId>
-					<groupId>org.apache.activemq</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -442,71 +385,9 @@
 			<version>${spring.cglib.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-core</artifactId>
-			<version>${camel.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-jms</artifactId>
-			<version>${camel.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>spring-aop</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>spring-jms</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>spring-context</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>spring-beans</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>spring-core</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>spring-tx</artifactId>
-					<groupId>org.springframework</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>com.springsource.javax.servlet</artifactId>
 			<version>${spring.javax.servlet.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty</artifactId>
-			<version>${jetty.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty-util</artifactId>
-			<version>${jetty.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>${joda.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.jms</groupId>
-			<artifactId>com.springsource.javax.jms</artifactId>
-			<version>${spring.javax.jms.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.annotation</groupId>
@@ -583,36 +464,6 @@
 			<version>${mongo.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.aspectj</artifactId>
-			<version>${servicemix.aspectj.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.blueprint</groupId>
-			<artifactId>org.apache.aries.blueprint</artifactId>
-			<version>${aries.blueprint.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.blueprint</groupId>
-			<artifactId>org.apache.aries.blueprint.core</artifactId>
-			<version>${aries.blueprint.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.restlet.osgi</groupId>
-			<artifactId>org.restlet</artifactId>
-			<version>${restlet.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.restlet.osgi</groupId>
-			<artifactId>org.restlet.ext.spring</artifactId>
-			<version>${restlet.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.restlet.osgi</groupId>
-			<artifactId>org.restlet.ext.jackson</artifactId>
-			<version>${restlet.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>${jackson.version}</version>
@@ -626,11 +477,6 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
 			<version>${mockito.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>ojdbc6.osgi</groupId>
-			<artifactId>ojdbc6.osgi</artifactId>
-			<version>${oracle.jdbc.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.junit4</groupId>
