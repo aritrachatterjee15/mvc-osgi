@@ -3,6 +3,8 @@ mvc-osgi
 
 A project demonstrating a web application in an OSGi environment using Gemini Blueprint, Gemini JPA, Eclipselink, Spring-MVC, Spring-Hateoas, Equinox.
 
+It has a localization module which uses the SLF4J Localization support for generating meaningful localized messages due to application exceptions. 
+
 Running the application:
 ==========================
 
@@ -110,11 +112,13 @@ Springframework:
 * org.apache.commons.logging_1.1.1.v201101211721
 * org.springframework.hateoas_0.6.0.RELEASE
 
-Logback:
+Logging:
 ---------
 * org.slf4j.api_1.7.2.v20121108-1250
+* slf4j.ext_1.7.2
 * ch.qos.logback.core_1.0.7
 * ch.qos.logback.classic_1.0.7
+* cal10n.api_0.7.4
 
 MySql Driver:
 --------------
