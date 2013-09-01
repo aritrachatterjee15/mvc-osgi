@@ -17,4 +17,7 @@ public interface BookInventory {
 
 	@Transactional(readOnly = true)
 	public List<Book> viewBooks();
+	
+	@Transactional(readOnly = true)
+	public Book findBook(long bookId);
 }

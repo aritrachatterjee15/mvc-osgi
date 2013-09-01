@@ -8,7 +8,8 @@ Bundle-Description: Spring MVC Web Another
 Bundle-SymbolicName: spring.mvc.another
 Bundle-DocURL: http://www.dummy.com/
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: com.test.web.jpa.client;version="0.0.1",
+Import-Package: com.test.web.common,
+ com.test.web.jpa.client;version="0.0.1",
  com.test.web.jpa.model;version="0.0.1",
  javax.annotation;version="[1.1.0,1.1.0]",
  javax.persistence;version="[2.0.0,2.1.0)",
@@ -26,6 +27,8 @@ Import-Package: com.test.web.jpa.client;version="0.0.1",
  org.springframework.context;version="[3.1.0,4.0.0)",
  org.springframework.context.annotation;version="[3.1.0,4.0.0)",
  org.springframework.context.support;version="[3.1.0,4.0.0)",
+ org.springframework.hateoas;version="0.6.0.RELEASE",
+ org.springframework.hateoas.mvc;version="0.6.0.RELEASE",
  org.springframework.http;version="[3.1.0,4.0.0)",
  org.springframework.stereotype;version="[3.1.0,4.0.0)",
  org.springframework.transaction.annotation;version="[3.1.0,4.0.0)",
@@ -36,3 +39,4 @@ Import-Package: com.test.web.jpa.client;version="0.0.1",
  org.springframework.web.servlet.config.annotation;version="[3.1.0,4.0.0)"
 Web-ContextPath: /author
 Bundle-Classpath: .
+Export-Package: com.test.web.spring.mvc.another

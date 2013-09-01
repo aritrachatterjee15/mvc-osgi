@@ -16,13 +16,17 @@ import javax.persistence.Table;
 		@NamedQuery(name = Author.GET_AUTHORS, query = "select distinct record"
 				+ " from Author record order by record.lastName"),
 		@NamedQuery(name = Author.GET_AUTHOR_BY_NAME, query = "select distinct record"
-				+ " from Author record" + " where record.lastName = :authorName") })
+				+ " from Author record"
+				+ " where record.lastName = :authorName"),
+		@NamedQuery(name = Author.GET_AUTHOR_BY_ID, query = "select distinct record"
+				+ " from Author record" + " where record.id = :authorId") })
 @Entity
 @Table(name = "AUTHORS")
 public class Author {
 
 	public static final String GET_AUTHORS = "GET_AUTHORS";
 	public static final String GET_AUTHOR_BY_NAME = "GET_AUTHOR_BY_NAME";
+	public static final String GET_AUTHOR_BY_ID = "GET_AUTHOR_BY_ID";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

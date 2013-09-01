@@ -30,4 +30,12 @@ public class AuthorOperationsImpl implements AuthorOperations {
 		List<Author> authors = query.getResultList();
 		return authors;
 	}
+
+	@Override
+	public Author findAuthor(long authorId) {
+		Query query = entityManager.createNamedQuery(Author.GET_AUTHOR_BY_ID);
+		query.setParameter("authorId", authorId);
+		Author author = (Author) query.getSingleResult();
+		return author;
+	}
 }

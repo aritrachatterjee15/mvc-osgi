@@ -18,4 +18,7 @@ public interface AuthorOperations {
 
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
 	public void addAuthor(String firstName, String lastName);
+
+	@Transactional(readOnly = true)
+	public Author findAuthor(long authorId);
 }

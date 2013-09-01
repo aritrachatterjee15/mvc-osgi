@@ -38,4 +38,11 @@ public class BookInventoryImpl implements BookInventory {
 		query.setParameter("authorName", lastName);
 		return (Author) query.getSingleResult();
 	}
+
+	@Override
+	public Book findBook(long bookId) {
+		Query query = entityManager.createNamedQuery(Book.GET_BOOK_BY_ID);
+		query.setParameter("bookId", bookId);
+		return (Book) query.getSingleResult();
+	}
 }

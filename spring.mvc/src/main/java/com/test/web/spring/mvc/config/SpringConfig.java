@@ -31,12 +31,17 @@ public class SpringConfig extends WebMvcConfigurerAdapter implements
 
 	@Bean
 	public BookInventory bookInventory() {
+		BundleContext bundleContext = getBundleContext();
+		return bundleContext.getService(bundleContext
+				.getServiceReference(BookInventory.class));
+	}
+
+	private BundleContext getBundleContext() {
 		BundleContext bundleContext = (BundleContext) servletContext
 				.getAttribute("osgi-bundlecontext");
 		if (bundleContext == null) {
 			throw new IllegalStateException("osgi-bundlecontext not registered");
 		}
-		return bundleContext.getService(bundleContext
-				.getServiceReference(BookInventory.class));
+		return bundleContext;
 	}
 }
