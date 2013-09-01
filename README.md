@@ -1,7 +1,7 @@
 mvc-osgi
 ========
 
-A project demonstrating a web application in an OSGi environment using Gemini Blueprint, Gemini JPA, Eclipselink, Spring-MVC, Equinox.
+A project demonstrating a web application in an OSGi environment using Gemini Blueprint, Gemini JPA, Eclipselink, Spring-MVC, Spring-Hateoas, Equinox.
 
 Running the application:
 ==========================
@@ -108,6 +108,7 @@ Springframework:
 * org.springframework.asm_3.1.4.RELEASE
 * org.aopalliance_1.0.0.v201105210816
 * org.apache.commons.logging_1.1.1.v201101211721
+* org.springframework.hateoas_0.6.0.RELEASE
 
 Logback:
 ---------
@@ -135,7 +136,6 @@ Follow the solution mentioned in the bug description, as a workaround.
 
 TODO
 -----
-* Hateoas Integration
 * Create Integration Tests
 * Build Automation and Deployment
 
