@@ -73,6 +73,7 @@
 		<module>spring.mvc</module>
 		<module>spring.mvc.another</module>
     <module>common</module>
+    <module>localization</module>
   </modules>
 
 	<build>

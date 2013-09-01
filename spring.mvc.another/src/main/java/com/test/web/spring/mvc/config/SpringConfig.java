@@ -11,6 +11,8 @@ import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import ch.qos.cal10n.IMessageConveyor;
+
 import com.test.web.jpa.client.AuthorOperations;
 import com.test.web.spring.mvc.another.AuthorResourceAssembler;
 
@@ -36,12 +38,24 @@ public class SpringConfig extends WebMvcConfigurerAdapter implements
 
 	@Bean
 	public AuthorOperations authorOperations() throws InterruptedException {
+		BundleContext bundleContext = getBundleContext();
+		return bundleContext.getService(bundleContext
+				.getServiceReference(AuthorOperations.class));
+	}
+
+	@Bean
+	public IMessageConveyor messageConveyor() {
+		BundleContext bundleContext = getBundleContext();
+		return bundleContext.getService(bundleContext
+				.getServiceReference(IMessageConveyor.class));
+	}
+
+	private BundleContext getBundleContext() {
 		BundleContext bundleContext = (BundleContext) servletContext
 				.getAttribute("osgi-bundlecontext");
 		if (bundleContext == null) {
 			throw new IllegalStateException("osgi-bundlecontext not registered");
 		}
-		return bundleContext.getService(bundleContext
-				.getServiceReference(AuthorOperations.class));
+		return bundleContext;
 	}
 }

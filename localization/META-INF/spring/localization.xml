@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgix="http://www.eclipse.org/gemini/blueprint/schema/blueprint-compendium"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.eclipse.org/gemini/blueprint/schema/blueprint-compendium http://www.eclipse.org/gemini/blueprint/schema/blueprint-compendium/gemini-blueprint-compendium.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<osgix:cm-properties id="localeProps"
+		persistent-id="com.test.web.locale">
+		<prop key="language">en</prop>
+		<prop key="country">US</prop>
+	</osgix:cm-properties>
+
+	<context:property-placeholder
+		properties-ref="localeProps" />
+
+	<bean id="locale" class="java.util.Locale">
+		<constructor-arg value="${language}" />
+		<constructor-arg value="${country}" />
+	</bean>
+
+	<bean id="messageConveyorImpl" class="ch.qos.cal10n.MessageConveyor">
+		<constructor-arg ref="locale" />
+	</bean>
+
+</beans>

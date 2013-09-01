@@ -10,6 +10,8 @@ import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import ch.qos.cal10n.IMessageConveyor;
+
 import com.test.web.jpa.client.BookInventory;
 
 /**
@@ -34,6 +36,13 @@ public class SpringConfig extends WebMvcConfigurerAdapter implements
 		BundleContext bundleContext = getBundleContext();
 		return bundleContext.getService(bundleContext
 				.getServiceReference(BookInventory.class));
+	}
+
+	@Bean
+	public IMessageConveyor messageConveyor() {
+		BundleContext bundleContext = getBundleContext();
+		return bundleContext.getService(bundleContext
+				.getServiceReference(IMessageConveyor.class));
 	}
 
 	private BundleContext getBundleContext() {
