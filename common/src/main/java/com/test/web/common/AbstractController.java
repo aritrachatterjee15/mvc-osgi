@@ -25,24 +25,16 @@ public abstract class AbstractController {
 	@ResponseBody
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	public Error handleException(RuntimeException e) {
-		return new Error(messageConveyor.getMessage(ExceptionMessage.RUNTIME_ERROR,
-				e.getLocalizedMessage()));
+		return new Error(messageConveyor.getMessage(
+				ExceptionMessage.RUNTIME_ERROR, e.getLocalizedMessage()));
 	}
-
-	/*
-	 * @ExceptionHandler
-	 * 
-	 * @ResponseBody
-	 * 
-	 * @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) public Error
-	 * handleException(RuntimeException e) { return new Error(e.getMessage()); }
-	 */
 
 	@ExceptionHandler
 	@ResponseBody
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	public Error handleException(ResourceNotFoundException e) {
-		return new Error(e.getMessage());
+		return new Error(messageConveyor.getMessage(ExceptionMessage.NOT_FOUND,
+				e.getLocalizedMessage()));
 	}
 
 	public static class Error {

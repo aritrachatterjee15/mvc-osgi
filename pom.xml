@@ -74,6 +74,7 @@
 		<module>spring.mvc.another</module>
     <module>common</module>
     <module>localization</module>
+    <module>localization.fr</module>
   </modules>
 
 	<build>

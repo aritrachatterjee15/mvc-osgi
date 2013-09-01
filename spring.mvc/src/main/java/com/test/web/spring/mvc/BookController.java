@@ -44,7 +44,7 @@ public class BookController extends AbstractController {
 			Book book = bookInventory.findBook(bookId);
 			return book;
 		} catch (Exception e) {
-			throw new ResourceNotFoundException("Unable to find book with ID: "
+			throw new ResourceNotFoundException("ID: "
 					+ bookId);
 		}
 

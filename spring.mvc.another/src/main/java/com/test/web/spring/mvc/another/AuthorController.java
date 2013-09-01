@@ -46,8 +46,7 @@ public class AuthorController extends AbstractController {
 			Author author = authorOperations.findAuthor(authorId);
 			return author;
 		} catch (Exception e) {
-			throw new ResourceNotFoundException(
-					"Unbale to find author with ID: " + authorId);
+			throw new ResourceNotFoundException("ID: " + authorId);
 		}
 
 	}

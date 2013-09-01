@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-Name: French Locale
+Created-By: Aritra Test Web
+Bundle-Version: 0.0.1.qualifier
+Bnd-LastModified: 1345665282491
+Bundle-ManifestVersion: 2
+Bundle-Description: French Locale
+Bundle-SymbolicName: localization.fr
+Bundle-DocURL: http://www.dummy.com/
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.gemini.blueprint.blueprint.container,
+ org.osgi.service.blueprint.container,
+ org.osgi.service.blueprint.reflect
+Fragment-Host: localization
+
